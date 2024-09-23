@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(8, 7, 19);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 1000px;
+}
+.card {
+    position: relative;
+    top: 150px;
+    height: 280px;
+    width: 450px;
+    border-radius: 40px;
+    transition: all 1s ease;
+    transform-style: preserve-3d;
+    &:hover {
+        transform: rotateY(180deg);
+    }
+}
+.frontcontainer {
+    position: absolute;
+    top: 0px;
+    height: 280px;
+    width: 450px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 45px;
+    box-shadow: 0 0px 50px black;
+    backdrop-filter: blur(20px);
+    transition: all 1s ease;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backface-visibility: hidden;
+}
+.backcontainer {
+    position: absolute;
+    top: 0px;
+    height: 280px;
+    width: 450px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 45px;
+    box-shadow: 0 0px 50px black;
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+}
+.c1 {
+    position: absolute;
+    top: 60px;
+    left: 350px;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background: linear-gradient(90deg, red, white);
+}
+.c2 {
+    position: absolute;
+    top: 320px;
+    left: 800px;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background: linear-gradient(90deg, white, red);
+}
+.mscard {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    height: 60px;
+    width: 110px;
+    background-image: url("/items/mastercard-26144.png");
+    background-size: 110px;
+    background-repeat: no-repeat;
+}
+.chip {
+    position: absolute;
+    top: 20px;
+    left: 350px;
+    height: 50px;
+    width: 70px;
+    background-image: url("/items/chip.png");
+    background-size: 50px;
+    background-repeat: no-repeat;
+}
+.text {
+    color: white;
+    position: absolute;
+    top: 130px;
+    left: 20px;
+    font-size: 20px;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 1px;
+}
+.name {
+    color: white;
+    position: absolute;
+    top: 210px;
+    left: 20px;
+    font-size: 13px;
+    font-family:'Courier New', Courier, monospace;
+}
+.valid {
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    top: 180px;
+    left: 340px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 17px;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: 0.1px;
+}
+
+
+.topword {
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: white;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 0.1px;
+}
+.magnet {
+    height: 60px;
+    width: 100%;
+    background-color: black;
+}
+.code {
+    position: absolute;
+    top: 130px;
+    left: 60px;
+    height: 30px;
+    width: 80%;
+    background-color: white;
+    border-radius: 10px;
+    font-size: 15px;
+    font-family:'Courier New', Courier, monospace;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.hide {
+    position: absolute;
+    top: 120px;
+    left: 18px;
+    height: 50px;
+    width: 80%;
+    background-color: rgb(168, 166, 166);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.line {
+    position: relative;
+    height: 5px;
+    width: 98%;
+    border-radius: 10px;
+    background-color: white;
+}
+.note {
+    position: absolute;
+    left: 30px;
+    height: 80px;
+    width: 90%;
+    font-weight: 0.1px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(90px);
+}
